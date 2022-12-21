@@ -88,5 +88,15 @@ namespace LinkedList
                 }
             }
         }
+        public void FirstDelete()
+        {
+            Node node = head;
+            if (head != null)
+            {
+                node = head;
+                head = head.Next;
+                node = null;
+            }
+        }
     }
 }

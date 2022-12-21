@@ -12,13 +12,12 @@ namespace LinkedList
         {
             LinkedList list = new LinkedList();
             list.Addnote(56);
-            //list.Addnote(30);
+            list.Addnote(30);
             list.Addnote(70);
+            list.FirstDelete();
 
-
-            list.Insert(2, 30);
+            
             list.Display();
-
 
 
         }
