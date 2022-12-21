@@ -47,5 +47,20 @@ namespace LinkedList
                 Console.WriteLine("\n");
             }
         }
+        public void Addreverse(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                head = node;
+                head.Next = temp;
+            }
+
+        }
     }
 }
