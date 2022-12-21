@@ -62,5 +62,31 @@ namespace LinkedList
             }
 
         }
+        public void Insert(int position, int data)
+        {
+            {
+                Node node = new Node(data);
+                if (position < 1)
+                    Console.WriteLine("Enter Valid Position");
+                else if (position == 1)
+                {
+                    node.Next = head;
+                    head = node;
+                }
+                else
+                {
+                    Node temp = head;
+                    {
+                        while (position > 2)
+                        {
+                            temp = temp.Next;
+                            position--;
+                        }
+                        node.Next = temp.Next;
+                        temp.Next = node;
+                    }
+                }
+            }
+        }
     }
 }
